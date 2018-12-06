@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat-index.html</title>
+    <!--  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+    
+      <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous">
+    </script>  
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<div class="container-fluid">
+<div class="row" ><h3 id="authUser"></h3><!-- style="position:fixed;z-index="10"" -->
+  <div class="col-md-4 col-sm-2">
+  	<div class="form-group">
+	    <label >Send Message:</label><br>
+	    <label for="SenderId">Sender</label>
+	    <select class="form-control" id="SenderSelectList"></select>
+  	</div>
+  	<div class="form-group">
+	    <label for="ReceiverId">Receiver</label>
+	    <select class="form-control" id="ReceiverSelectList"></select>
+  	</div>
+  	<div class="form-group">
+	    <label for="Body">Message</label>
+	    <input type="textarea" class="form-control" id="Body">
+  	</div>
+    <button type="submit" id="sendBtn" class="btn btn-default">Submit</button>
+  <br><br>
+  </div>
+  <div class="col-md-8 col-sm-4">All messages TO/FROM me, last update: <span id="time">hello3 - index.html</span>
+  <div id="DivdisplayAllMessages">INIT</div>
+  
+  </div>
+</div>
+<div class="row"  ><!-- style="z-index="100"" -->
+  <div class="col-md-4 col-sm-2 list-group" id="divLeftBottom"><h3>Users List:</h3></div>
+  <div class="col-md-8 col-sm-4" id="MessageSingleUser">Correspondence with user:</div>
+</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="js/chat2.js"></script>
+</body>
+</html>
